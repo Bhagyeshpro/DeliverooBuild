@@ -1,17 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-// import { t } from 'react-native-tailwindcss';
+// In App.js in a new project
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import HomeScreen from './src/screens/HomeScreen';
+import { View } from 'react-native';
+import { Text } from 'react-native';
+import HomeScreen from './src/screens/HomeScreen';
 
-const App = () => {
+const Stack = createNativeStackNavigator();
+
+function App() {
   return (
-    <View className="pt-8 bg-purple-600 flex-1">
-      <Text className="text-white text-6xl">
-      App
-      </Text>
-    </View>
-  )
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
-export default App
-
-const styles = StyleSheet.create({})
+export default App;
