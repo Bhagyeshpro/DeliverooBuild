@@ -34,7 +34,7 @@ const HomeScreen = () => {
                 <MenuIcon name="menu" size={36} style={{ color: "#2dd4bf" }} />
             </View>
 
-            <ScrollView className="mb-1" showsVerticalScrollIndicator={false}>
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 {/* Body */}
                 <Categories />
