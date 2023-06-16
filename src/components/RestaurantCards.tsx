@@ -4,12 +4,12 @@ import Icons from 'react-native-vector-icons/FontAwesome';
 
 const RestaurantCards = ({ id, title, imageURL, reviews, dishes, rating, genre, address, short_description, long, lat, }) => {
   return (
-    <TouchableOpacity activeOpacity={0.5} className="mr-3 mb-3 w-64 bg-white shadow-sm shadow-black">
+    <TouchableOpacity activeOpacity={0.5} className="mr-3 mb-3 w-60 bg-white shadow-sm shadow-black">
       <Image
         source={{
           uri: imageURL
         }}
-        className="h-40 w-full bg-slate-400"
+        className="h-36 w-full bg-slate-400"
       />
 
       {/* <View className="absolute w-full h-44 items-end justify-end">
